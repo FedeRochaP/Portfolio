@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+    margin: 20px 100px 20px 100px;
+    height: 4px;
+    border: none;
+    background: -webkit-linear-gradient(left, rgb(136, 136, 255), rgb(96, 202, 202), rgb(199, 199, 243));
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: black;
+}
+
+button {
+    background-color: rgb(32, 29, 29);
+    border: none;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    padding: 6px 10px 6px 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+button a {
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(118, 118, 165);
+}
+
+header {
+    background-color: rgb(32, 29, 29);
+    top: 0;
+    color: white;
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+
+header div{
+    width: 80px;
+    height: 80px;
+    margin: 20px 0 20px 20px;
+    color: white;
+}
+
+header nav {
+    text-align: right;
+}
+
+header ul {
+    margin-top: 45px;
+    margin-right: 30px;
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+}
+
+main {
+    margin: 30px;
+    border-radius: 20px;
+    background-color: rgb(224, 228, 228);
+}
+
+#section-about {
+    margin-top: 140px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.section-about-div-1 {
+    margin: 50px 30px 30px 30px;
+    text-align: center;
+    width: 50%;
+
+}
+
+.section-about-div-1 h1 {
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+.section-about-div-1 p {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.section-about-div-2{
+    background-image: url("images/code.jpg");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+#section-work {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.section-work-div-1 {
+    background-image: url("images/work.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.section-work-div-2 {
+    margin: 30px;
+    text-align: center;
+    width: 60%;
+}
+
+.section-work-div-2 h1 {
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+.section-work-div-2 p {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.section-work-div-2-icons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.section-work-div-2 a {
+    color: rgb(155, 115, 192);
+}
+
+.div-github {
+    width: 150px;
+    height: 150px;
+}
+
+#section-experience {
+    margin-top: 50px;
+    padding: 30px;
+    height: auto;
+    text-align: center;
+    border-radius: 20px ;
+
+}
+
+#section-experience h1 {
+    font-size: 35px;
+}
+
+#section-experience p {
+    font-size: 20px;
+}
+
+
+.section-experience-box {
+    background-color: rgb(210, 210, 228);
+    padding: 100px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+
+.section-experience-box svg {
+    width: 200px;
+    height: 200px;
+}
+
+.box-1 {
+    background-color: rgb(230, 167, 50);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.box-2 {
+    background-color: rgb(79, 79, 255);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.box-3 {
+    background-color: rgb(216, 216, 37);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#section-contact {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.section-contact-div-1 {
+    margin: 50px 30px 30px 30px;
+    width: 70%;
+    height: 100%;
+    text-align: center;
+}
+
+.section-contact-div-1 h1 {
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+.section-contact-div-1 p {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.section-contact-div-2 {
+    background-image: url("images/sm.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.section-contact-div-1 svg {
+    width: 200px;
+    height: 200px;
+}
+
+.c-box-1 a {
+    color: rgb(1, 180, 1);
+}
