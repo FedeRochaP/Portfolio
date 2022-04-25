@@ -2,11 +2,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+h3 {
+    color: rgb(199, 199, 199);
+}
+
+h5 {
+    font-size: 16px;
+    color: rgb(199, 199, 199);
 }
 
 hr {
-    margin: 20px 100px 20px 100px;
+    margin: 20px 50px;
     height: 4px;
     border: none;
     background: -webkit-linear-gradient(left, rgb(136, 136, 255), rgb(96, 202, 202), rgb(199, 199, 243));
@@ -41,29 +55,33 @@ button a {
 }
 
 body {
-    background-color: rgb(118, 118, 165);
+    background-color: rgb(240, 240, 240); 
+    display: flex;
+    justify-content: center;
 }
 
 header {
-    background-color: rgb(32, 29, 29);
     top: 0;
     color: white;
     width: 100%;
-    height: 120px;
     position: fixed;
     display: flex;
     justify-content: space-between;
 }
 
 header div{
-    width: 80px;
-    height: 80px;
-    margin: 20px 0 20px 20px;
+    margin: 20px;
     color: white;
+    font-size: 60px;
 }
 
-header nav {
+header nav ul{
     text-align: right;
+    margin: 35px;
+}
+
+header nav i{
+    font-size: 0;
 }
 
 header ul {
@@ -79,74 +97,70 @@ header ul {
 main {
     margin: 30px;
     border-radius: 20px;
-    background-color: rgb(224, 228, 228);
-}
-
-#section-about {
-    margin-top: 140px;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-}
-
-.section-about-div-1 {
-    margin: 50px 30px 30px 30px;
     text-align: center;
-    width: 50%;
-
 }
 
-.section-about-div-1 h1 {
-    font-size: 35px;
-    padding-bottom: 20px;
+#info {
+    margin-top: 50px;
+    width: 100%;
+    display: block;
 }
 
-.section-about-div-1 p {
+.my-img {
+    margin: auto;
+    margin-bottom: 30px;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-image: url('images/ok.jpg');
+    border: solid 4px rgb(22, 199, 199);
+    border-radius: 50%;
+}
+
+.about button {
+    background-color: #2098fa;
+    color: white;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.about i {
     font-size: 20px;
-    padding-top: 20px;
 }
 
-.section-about-div-2{
-    background-image: url("images/code.jpg");
+.icon i {
+    margin-top: 3px;
+    font-size: 30px;
+}
+
+.icon button {
+    border-radius: 10px;
+}
+
+#work {
+    margin: 30px 0px;
+    padding: 20px;
     width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 20px;
-}
-
-#section-work {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-}
-
-.section-work-div-1 {
-    background-image: url("images/work.jpg");
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    border-radius: 20px;
-}
-
-.section-work-div-2 {
-    margin: 30px;
     text-align: center;
-    width: 60%;
+    border: solid #dcdcdc;
+    box-shadow: 6px 6px 6px 4px #dcdcdc;
+    border-radius: 20px;
+    max-width: 600px;
 }
 
-.section-work-div-2 h1 {
+.work h1 {
     font-size: 35px;
     padding-bottom: 20px;
 }
 
-.section-work-div-2 p {
+.work p {
     font-size: 20px;
     padding-top: 20px;
     padding-bottom: 30px;
 }
 
-.section-work-div-2-icons {
+.work-icons {
     width: 100%;
     height: auto;
     display: flex;
@@ -156,100 +170,54 @@ main {
     gap: 40px;
 }
 
-.section-work-div-2 a {
+.work a {
     color: rgb(155, 115, 192);
 }
 
 .div-github {
-    width: 150px;
-    height: 150px;
+    font-size: 150px;
 }
 
-#section-experience {
+#experience {
+    width: 100%;
     margin-top: 50px;
-    padding: 30px;
+    padding: 10px;
     height: auto;
     text-align: center;
-    border-radius: 20px ;
-
+    border: solid #dcdcdc;
+    box-shadow: 6px 6px 6px 4px #dcdcdc;
+    border-radius: 20px;
+    max-width: 600px;
 }
 
-#section-experience h1 {
+#experience h1 {
     font-size: 35px;
 }
 
-#section-experience p {
+#experience p {
     font-size: 20px;
 }
 
-
-.section-experience-box {
-    background-color: rgb(210, 210, 228);
-    padding: 100px;
+.experience-box {
+    padding: 40px;
     display: flex;
-    justify-content: space-around;
     border-radius: 20px;
+    gap: 20px;
 }
 
-.section-experience-box svg {
-    width: 200px;
-    height: 200px;
+.experience-box i {
+    font-size: 30px;
+    color: #a5a5a5;
 }
 
-.box-1 {
-    background-color: rgb(230, 167, 50);
-    border-radius: 20px;
-    padding: 20px;
-}
-
-.box-2 {
-    background-color: rgb(79, 79, 255);
-    border-radius: 20px;
-    padding: 20px;
-}
-
-.box-3 {
-    background-color: rgb(216, 216, 37);
-    border-radius: 20px;
-    padding: 20px;
-}
-
-#section-contact {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-}
-
-.section-contact-div-1 {
-    margin: 50px 30px 30px 30px;
-    width: 70%;
-    height: 100%;
+.t-box {
     text-align: center;
 }
 
-.section-contact-div-1 h1 {
-    font-size: 35px;
-    padding-bottom: 20px;
+.icon-exp {
+    display: flex;
 }
 
-.section-contact-div-1 p {
-    font-size: 20px;
-    padding-top: 20px;
-}
-
-.section-contact-div-2 {
-    background-image: url("images/sm.jpg");
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    border-radius: 20px;
-}
-
-.section-contact-div-1 svg {
-    width: 200px;
-    height: 200px;
-}
-
-.c-box-1 a {
-    color: rgb(1, 180, 1);
+@media screen and (min) {
+    
 }
