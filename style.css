@@ -2,8 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Reem Kufi', sans-serif;
+    font-family: 'Google Sans', sans-serif;
 }
+
+/* General */
 
 h1 {
     font-size: 40px;
@@ -11,12 +13,12 @@ h1 {
 }
 
 h3 {
-    color: rgb(199, 199, 199);
+    color: #13b9fd;
 }
 
 h5 {
     font-size: 16px;
-    color: rgb(199, 199, 199);
+    color: #aaaaaa;
 }
 
 hr {
@@ -100,6 +102,8 @@ main {
     text-align: center;
 }
 
+/* Info Section */
+
 #info {
     margin-top: 50px;
     width: 100%;
@@ -113,7 +117,7 @@ main {
     height: 200px;
     background-size: cover;
     background-image: url('images/ok.jpg');
-    border: solid 4px rgb(22, 199, 199);
+    border: solid 4px #13b9fd;
     border-radius: 50%;
 }
 
@@ -138,12 +142,106 @@ main {
     border-radius: 10px;
 }
 
+/* Experience Section */
+
+#experience {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px;
+    height: auto;
+    text-align: center;
+    box-shadow: 6px 6px 6px 4px #dcdcdc;
+    border-radius: 20px;
+    max-width: 600px;
+}
+
+#experience h1 {
+    margin-top: 20px;
+    font-size: 40px;
+    color: #14c2ad;
+}
+
+#experience p {
+    font-size: 20px;
+}
+
+.experience-box {
+    padding: 40px;
+    display: flex;
+    border-radius: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.experience-box i {
+    font-size: 30px;
+    color: #a5a5a5;
+    margin-right: 5px;
+}
+
+.t-box {
+    text-align: center;
+    width: 200px;
+}
+
+.a-box {
+    padding-left: 20%;
+}
+
+.icon-exp {
+    display: flex;
+}
+
+.order {
+    text-align: left;
+}
+
+.order h5 {
+    margin-top: -10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.b-1 i{
+    color: #f06529; 
+}
+
+.b-2 i{
+    color: #2965f1; 
+}
+
+.b-3 i{
+    color: #f0db4f; 
+}
+
+.b-4 i{
+    color: #9400FF; 
+}
+
+.b-5 i{
+    color: #8993be ; 
+}
+
+.b-6 i{
+    color: #F24E1E; 
+}
+
+.b-7 i{
+    color:#f34f29 ; 
+}
+
+.b-8 i{
+    color: #1d202d ; 
+}
+
+/* Work Section */
+
 #work {
     margin: 30px 0px;
     padding: 20px;
     width: 100%;
     text-align: center;
-    border: solid #dcdcdc;
     box-shadow: 6px 6px 6px 4px #dcdcdc;
     border-radius: 20px;
     max-width: 600px;
@@ -152,6 +250,7 @@ main {
 .work h1 {
     font-size: 35px;
     padding-bottom: 20px;
+    color: #14c2ad;
 }
 
 .work p {
@@ -171,53 +270,21 @@ main {
 }
 
 .work a {
-    color: rgb(155, 115, 192);
+    color: #1d202d;
 }
 
 .div-github {
     font-size: 150px;
 }
 
-#experience {
-    width: 100%;
-    margin-top: 50px;
-    padding: 10px;
-    height: auto;
-    text-align: center;
-    border: solid #dcdcdc;
-    box-shadow: 6px 6px 6px 4px #dcdcdc;
-    border-radius: 20px;
-    max-width: 600px;
-}
-
-#experience h1 {
-    font-size: 35px;
-}
-
-#experience p {
-    font-size: 20px;
-}
-
-.experience-box {
-    padding: 40px;
+.work-img {
     display: flex;
-    border-radius: 20px;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
-.experience-box i {
-    font-size: 30px;
-    color: #a5a5a5;
-}
-
-.t-box {
-    text-align: center;
-}
-
-.icon-exp {
-    display: flex;
-}
-
-@media screen and (min) {
-    
+.work-img img {
+    width: 45%;
+    height: 150px;
+    border-radius: 20px;
 }
