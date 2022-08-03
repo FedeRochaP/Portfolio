@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Google Sans', sans-serif;
+}
+
+/* General */
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+h3 {
+    color: #13b9fd;
+}
+
+h5 {
+    font-size: 16px;
+    color: #aaaaaa;
+}
+
+hr {
+    margin: 20px 50px;
+    height: 4px;
+    border: none;
+    background: -webkit-linear-gradient(left, rgb(136, 136, 255), rgb(96, 202, 202), rgb(199, 199, 243));
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: black;
+}
+
+button {
+    background-color: rgb(32, 29, 29);
+    border: none;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    padding: 6px 10px 6px 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+button a {
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: center;
+    transition: 0.6s;
+}
+
+header {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+}
+
+header div {
+    margin: 20px;
+    color: white;
+    font-size: 60px;
+}
+
+header nav ul {
+    text-align: right;
+    margin: 35px;
+}
+
+header nav i {
+    font-size: 0;
+}
+
+header ul {
+    margin-top: 45px;
+    margin-right: 30px;
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #6200EE;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #6200EE;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+main {
+    margin: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* Info Section */
+
+#info {
+    margin-top: 50px;
+    width: 100%;
+    display: block;
+}
+
+.my-img {
+    margin: auto;
+    margin-bottom: 30px;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-image: url('../images/ok.jpg');
+    border: solid 4px #13b9fd;
+    border-radius: 50%;
+}
+
+.about button {
+    background-color: #2098fa;
+    color: white;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.about i {
+    font-size: 20px;
+}
+
+.btn {
+    border: 2px solid rgb(129, 129, 129);
+    transition: 0.4s;
+}
+
+.btn:hover {
+    background: #13b9fd;
+    border-color: white;
+}
+
+.btn:hover i {
+    color: #fff;
+}
+
+.icon i {
+    margin-top: 3px;
+    font-size: 30px;
+    color: rgb(129, 129, 129);
+}
+
+.icon button {
+    border-radius: 10px;
+}
+
+/* Experience Section */
+
+#experience {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px;
+    height: auto;
+    text-align: center;
+    box-shadow: 6px 6px 6px 4px #dcdcdc;
+    border-radius: 20px;
+    max-width: 600px;
+}
+
+#experience h1 {
+    margin-top: 20px;
+    font-size: 40px;
+    color: #14c2ad;
+}
+
+#experience p {
+    font-size: 20px;
+}
+
+.experience-box {
+    padding: 40px;
+    display: flex;
+    border-radius: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.experience-box i {
+    font-size: 30px;
+    color: #a5a5a5;
+    margin-right: 5px;
+}
+
+.t-box {
+    text-align: center;
+    width: 200px;
+}
+
+.a-box {
+    padding-left: 20%;
+}
+
+.icon-exp {
+    display: flex;
+}
+
+.order {
+    text-align: left;
+}
+
+.order h5 {
+    margin-top: -10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.b-1 i {
+    color: #f06529;
+}
+
+.b-2 i {
+    color: #2965f1;
+}
+
+.b-3 i {
+    color: #f0db4f;
+}
+
+.b-4 i {
+    color: #9400FF;
+}
+
+.b-5 i {
+    color: #8993be;
+}
+
+.b-6 i {
+    color: #F24E1E;
+}
+
+.b-7 i {
+    color: #f34f29;
+}
+
+.b-8 i {
+    color: #1d202d;
+}
+
+/* Work Section */
+
+#work {
+    margin: 30px 0px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 6px 6px 6px 4px #dcdcdc;
+    border-radius: 20px;
+    max-width: 600px;
+}
+
+.work h1 {
+    font-size: 35px;
+    padding-bottom: 20px;
+    color: #14c2ad;
+}
+
+.work p {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.work-icons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.work a {
+    color: #1d202d;
+}
+
+.div-github {
+    font-size: 150px;
+}
+
+.work-img {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.work-img img {
+    width: 45%;
+    height: 150px;
+    border-radius: 20px;
+}
+
+
+
+body.active {
+    background: #15202B;
+}
+
+body.active h1, body.active h2 {
+    color: #fff;
+}
+
+body.active h3 {
+    color: #BB86FC;
+}
+
+body.active .my-img {
+    border-color: #BB86FC;
+}
+
+body.active .about button {
+    background: #A51DA5;
+}
+
+body.active .btn {
+    border: 2px solid #BB86FC;
+    transition: 0.4s;
+}
+
+body.active .icon i {
+    color: #BB86FC;
+}
+
+body.active .btn:hover {
+    background: #A51DA5;
+    border-color: #fff;
+}
+
+body.active .btn:hover i {
+    color: #fff;
+}
+
+body.active #experience {
+    box-shadow: 6px 6px 6px #BB86FC;
+}
+
+body.active #experience h1 {
+    color: #A51DA5;
+}
+
+body.active .b-8 i {
+    color: #A51DA5;
+}
